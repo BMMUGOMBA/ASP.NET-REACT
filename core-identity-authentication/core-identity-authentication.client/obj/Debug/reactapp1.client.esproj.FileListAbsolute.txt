@@ -1,0 +1,1 @@
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\Identity Authentication\reactapp1.client\obj\Debug\reactapp1.client.esproj.CoreCompileInputs.cache

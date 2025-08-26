@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "core-identity-authentication.client", "core-identity-authentication.client\core-identity-authentication.client.esproj", "{270351B9-EF98-A8B2-B27D-FB7D64933556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "core-identity-authentication.Server", "core-identity-authentication.Server\core-identity-authentication.Server.csproj", "{2294DDF2-8174-41B4-A4A1-893BFC860B8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{270351B9-EF98-A8B2-B27D-FB7D64933556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{270351B9-EF98-A8B2-B27D-FB7D64933556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{270351B9-EF98-A8B2-B27D-FB7D64933556}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{270351B9-EF98-A8B2-B27D-FB7D64933556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{270351B9-EF98-A8B2-B27D-FB7D64933556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{270351B9-EF98-A8B2-B27D-FB7D64933556}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2294DDF2-8174-41B4-A4A1-893BFC860B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2294DDF2-8174-41B4-A4A1-893BFC860B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2294DDF2-8174-41B4-A4A1-893BFC860B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2294DDF2-8174-41B4-A4A1-893BFC860B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1AFB47E-2C51-4AB5-BE2D-26383DAFFBA1}
+	EndGlobalSection
+EndGlobal

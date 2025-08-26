@@ -1,0 +1,262 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2294DDF2-8174-41B4-A4A1-893BFC860B8D}|core-identity-authentication.Server\\core-identity-authentication.Server.csproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.server\\core-identity-authentication.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2294DDF2-8174-41B4-A4A1-893BFC860B8D}|core-identity-authentication.Server\\core-identity-authentication.Server.csproj|solutionrelative:core-identity-authentication.server\\core-identity-authentication.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|solutionrelative:core-identity-authentication.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.client\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|solutionrelative:core-identity-authentication.client\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.client\\src\\pages\\home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|solutionrelative:core-identity-authentication.client\\src\\pages\\home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.client\\src\\components\\logoutlink.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|solutionrelative:core-identity-authentication.client\\src\\components\\logoutlink.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.client\\src\\components\\authorizeview.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|solutionrelative:core-identity-authentication.client\\src\\components\\authorizeview.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.client\\src\\components\\weatherforecast.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|solutionrelative:core-identity-authentication.client\\src\\components\\weatherforecast.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.client\\src\\pages\\register.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|solutionrelative:core-identity-authentication.client\\src\\pages\\register.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.client\\src\\pages\\login.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|solutionrelative:core-identity-authentication.client\\src\\pages\\login.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{270351B9-EF98-A8B2-B27D-FB7D64933556}|core-identity-authentication.client\\core-identity-authentication.client.esproj|solutionrelative:core-identity-authentication.client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2294DDF2-8174-41B4-A4A1-893BFC860B8D}|core-identity-authentication.Server\\core-identity-authentication.Server.csproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2294DDF2-8174-41B4-A4A1-893BFC860B8D}|core-identity-authentication.Server\\core-identity-authentication.Server.csproj|solutionrelative:core-identity-authentication.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2294DDF2-8174-41B4-A4A1-893BFC860B8D}|core-identity-authentication.Server\\core-identity-authentication.Server.csproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.server\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2294DDF2-8174-41B4-A4A1-893BFC860B8D}|core-identity-authentication.Server\\core-identity-authentication.Server.csproj|solutionrelative:core-identity-authentication.server\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2294DDF2-8174-41B4-A4A1-893BFC860B8D}|core-identity-authentication.Server\\core-identity-authentication.Server.csproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.server\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2294DDF2-8174-41B4-A4A1-893BFC860B8D}|core-identity-authentication.Server\\core-identity-authentication.Server.csproj|solutionrelative:core-identity-authentication.server\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2294DDF2-8174-41B4-A4A1-893BFC860B8D}|core-identity-authentication.Server\\core-identity-authentication.Server.csproj|c:\\users\\user\\onedrive\\desktop\\dev\\asp.net-react\\core-identity-authentication\\core-identity-authentication.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2294DDF2-8174-41B4-A4A1-893BFC860B8D}|core-identity-authentication.Server\\core-identity-authentication.Server.csproj|solutionrelative:core-identity-authentication.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\App.css",
+              "RelativeDocumentMoniker": "core-identity-authentication.client\\src\\App.css",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\App.css",
+              "RelativeToolTip": "core-identity-authentication.client\\src\\App.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-21T09:13:36.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LogoutLink.tsx",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Components\\LogoutLink.tsx",
+              "RelativeDocumentMoniker": "core-identity-authentication.client\\src\\Components\\LogoutLink.tsx",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Components\\LogoutLink.tsx",
+              "RelativeToolTip": "core-identity-authentication.client\\src\\Components\\LogoutLink.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-08-21T08:57:57.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthorizeView.tsx",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Components\\AuthorizeView.tsx",
+              "RelativeDocumentMoniker": "core-identity-authentication.client\\src\\Components\\AuthorizeView.tsx",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Components\\AuthorizeView.tsx",
+              "RelativeToolTip": "core-identity-authentication.client\\src\\Components\\AuthorizeView.tsx",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAcwHQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-08-21T08:56:53.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherForecast.tsx",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Components\\WeatherForecast.tsx",
+              "RelativeDocumentMoniker": "core-identity-authentication.client\\src\\Components\\WeatherForecast.tsx",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Components\\WeatherForecast.tsx",
+              "RelativeToolTip": "core-identity-authentication.client\\src\\Components\\WeatherForecast.tsx",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwDcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-08-21T08:56:07.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.tsx",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Pages\\Register.tsx",
+              "RelativeDocumentMoniker": "core-identity-authentication.client\\src\\Pages\\Register.tsx",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Pages\\Register.tsx",
+              "RelativeToolTip": "core-identity-authentication.client\\src\\Pages\\Register.tsx",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAiwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-08-21T08:54:44.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.tsx",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Pages\\Login.tsx",
+              "RelativeDocumentMoniker": "core-identity-authentication.client\\src\\Pages\\Login.tsx",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Pages\\Login.tsx",
+              "RelativeToolTip": "core-identity-authentication.client\\src\\Pages\\Login.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-08-21T08:53:47.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.tsx",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Pages\\Home.tsx",
+              "RelativeDocumentMoniker": "core-identity-authentication.client\\src\\Pages\\Home.tsx",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\Pages\\Home.tsx",
+              "RelativeToolTip": "core-identity-authentication.client\\src\\Pages\\Home.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-08-21T08:52:45.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\App.tsx",
+              "RelativeDocumentMoniker": "core-identity-authentication.client\\src\\App.tsx",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\src\\App.tsx",
+              "RelativeToolTip": "core-identity-authentication.client\\src\\App.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-08-21T08:35:14.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "vite.config.ts",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\vite.config.ts",
+              "RelativeDocumentMoniker": "core-identity-authentication.client\\vite.config.ts",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.client\\vite.config.ts",
+              "RelativeToolTip": "core-identity-authentication.client\\vite.config.ts",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-08-21T08:21:45.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "core-identity-authentication.Server",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.Server\\core-identity-authentication.Server.csproj",
+              "RelativeDocumentMoniker": "core-identity-authentication.Server\\core-identity-authentication.Server.csproj",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.Server\\core-identity-authentication.Server.csproj",
+              "RelativeToolTip": "core-identity-authentication.Server\\core-identity-authentication.Server.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-21T06:41:01.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "core-identity-authentication.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.Server\\appsettings.json",
+              "RelativeToolTip": "core-identity-authentication.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-21T07:30:04.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.Server\\Data\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "core-identity-authentication.Server\\Data\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.Server\\Data\\ApplicationUser.cs",
+              "RelativeToolTip": "core-identity-authentication.Server\\Data\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T06:53:04.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.Server\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "core-identity-authentication.Server\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.Server\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "core-identity-authentication.Server\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T06:52:24.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.Server\\Program.cs",
+              "RelativeDocumentMoniker": "core-identity-authentication.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\DEV\\ASP.NET-REACT\\core-identity-authentication\\core-identity-authentication.Server\\Program.cs",
+              "RelativeToolTip": "core-identity-authentication.Server\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA4wB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T06:44:09.844Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

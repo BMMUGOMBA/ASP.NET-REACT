@@ -1,0 +1,6 @@
+@core_identity_authentication.Server_HostAddress = http://localhost:5010
+
+GET {{core_identity_authentication.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
