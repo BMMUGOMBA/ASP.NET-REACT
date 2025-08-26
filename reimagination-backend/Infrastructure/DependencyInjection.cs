@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace Infrastructure;
 
@@ -14,18 +15,21 @@ public static class DependencyInjection
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
 
+        // ✅ API-friendly identity registration
         services
-            .AddIdentity<ApplicationUser, IdentityRole<Guid>>(opt =>
+            .AddIdentityCore<ApplicationUser>(opt =>
             {
                 opt.User.RequireUniqueEmail = true;
-                // Reasonable demo defaults; tighten in prod
+                // Demo-friendly; tighten for prod
                 opt.Password.RequireNonAlphanumeric = false;
                 opt.Password.RequireUppercase = false;
                 opt.Password.RequireLowercase = true;
                 opt.Password.RequiredLength = 6;
             })
-            .AddEntityFrameworkStores<AppDbContext>()
-            .AddDefaultTokenProviders();
+            .AddRoles<IdentityRole<Guid>>()                     // we use roles: Admin/User
+            .AddEntityFrameworkStores<AppDbContext>()           // EF Core backing store
+            .AddSignInManager<SignInManager<ApplicationUser>>() // needed for CheckPasswordSignInAsync in AuthController
+            .AddDefaultTokenProviders();                        // password reset, etc.
 
         return services;
     }
