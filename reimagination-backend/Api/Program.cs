@@ -43,6 +43,18 @@ builder.Services
             ClockSkew = TimeSpan.FromMinutes(2)
         };
     });
+    
+builder.Services.AddScoped<Api.Security.ICurrentUser>(sp =>
+{
+    var http = sp.GetRequiredService<IHttpContextAccessor>();
+    var principal = http.HttpContext?.User ?? new System.Security.Claims.ClaimsPrincipal();
+    return new Api.Security.CurrentUser(principal);
+});
+builder.Services.AddHttpContextAccessor();
+
+// Add Application layer services (AutoMapper + Validators)
+builder.Services.AddApplication();
+
 
 builder.Services.AddAuthorization();
 
