@@ -1,26 +1,32 @@
 using System.Text;
+using Application;
+using Api.Security;
 using FluentValidation.AspNetCore;
 using Infrastructure;
-using Infrastructure.Data;
 using Infrastructure.Auth;
+using Infrastructure.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Serilog for structured logs
+// ---------- Logging ----------
 builder.Host.UseSerilog((ctx, cfg) =>
     cfg.ReadFrom.Configuration(ctx.Configuration).WriteTo.Console());
 
-// Add infrastructure (DbContext + Identity)
+// ---------- Infrastructure (DbContext + Identity) ----------
 builder.Services.AddInfrastructure(builder.Configuration);
 
-// JWT Auth
+// ---------- Application (AutoMapper + Validators DI) ----------
+builder.Services.AddApplication();
+
+// ---------- JWT Auth ----------
 var jwt = builder.Configuration.GetSection("Jwt");
 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt["Key"]!));
 
@@ -43,22 +49,10 @@ builder.Services
             ClockSkew = TimeSpan.FromMinutes(2)
         };
     });
-    
-builder.Services.AddScoped<Api.Security.ICurrentUser>(sp =>
-{
-    var http = sp.GetRequiredService<IHttpContextAccessor>();
-    var principal = http.HttpContext?.User ?? new System.Security.Claims.ClaimsPrincipal();
-    return new Api.Security.CurrentUser(principal);
-});
-builder.Services.AddHttpContextAccessor();
-
-// Add Application layer services (AutoMapper + Validators)
-builder.Services.AddApplication();
-
 
 builder.Services.AddAuthorization();
 
-// API versioning
+// ---------- API versioning ----------
 builder.Services.AddApiVersioning(options =>
 {
     options.AssumeDefaultVersionWhenUnspecified = true;
@@ -67,18 +61,19 @@ builder.Services.AddApiVersioning(options =>
     options.ApiVersionReader = new UrlSegmentApiVersionReader();
 });
 
-// Controllers + FluentValidation (application validators later)
-builder.Services.AddControllers().AddNewtonsoftJson();
+// ---------- Controllers + FluentValidation (auto-validation in API layer) ----------
+builder.Services.AddControllers()
+    .AddNewtonsoftJson();
 builder.Services.AddFluentValidationAutoValidation();
 
-// Swagger
+// ---------- Swagger ----------
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Health checks (DB)
+// ---------- Health checks ----------
 builder.Services.AddHealthChecks().AddDbContextCheck<AppDbContext>();
 
-// CORS
+// ---------- CORS ----------
 var corsOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>() ?? Array.Empty<string>();
 builder.Services.AddCors(opt =>
 {
@@ -89,7 +84,15 @@ builder.Services.AddCors(opt =>
         .AllowCredentials());
 });
 
-builder.Services.AddScoped<DataSeeder>(); // seed roles/users
+// ---------- Per-request helpers ----------
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<ICurrentUser>(sp =>
+{
+    var http = sp.GetRequiredService<IHttpContextAccessor>();
+    var principal = http.HttpContext?.User ?? new System.Security.Claims.ClaimsPrincipal();
+    return new CurrentUser(principal);
+});
+builder.Services.AddScoped<DataSeeder>();
 builder.Services.AddScoped<JwtTokenService>();
 
 var app = builder.Build();
@@ -109,7 +112,7 @@ if (app.Environment.IsDevelopment())
 app.MapHealthChecks("/health");
 app.MapControllers();
 
-// Ensure DB + seed (dev convenience)
+// ---------- Ensure DB + seed ----------
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
@@ -121,7 +124,7 @@ using (var scope = app.Services.CreateScope())
 
 app.Run();
 
-// JWT token helper
+// ---------- Helpers ----------
 public class JwtTokenService
 {
     private readonly IConfiguration _cfg;

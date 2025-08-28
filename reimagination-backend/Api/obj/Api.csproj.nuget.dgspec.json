@@ -58,41 +58,29 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.1, )"
-            },
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[12.0.0, )"
-            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[11.3.1, )"
+              "version": "(, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[9.0.8, )"
-            },
-            "Microsoft.AspNetCore.HealthChecks": {
-              "target": "Package",
-              "version": "[1.0.0, )"
+              "version": "(, )"
             },
             "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
-              "version": "[5.1.0, )"
+              "version": "(, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "(, )"
             },
             "Serilog.Sinks.Console": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "(, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "(, )"
             }
           },
           "imports": [
@@ -107,6 +95,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -169,10 +160,6 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[15.0.1, )"
-            },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.1, )"
             },
             "FluentValidation": {
               "target": "Package",
@@ -323,6 +310,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.0.1, )"
+            },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.3.1, )"
