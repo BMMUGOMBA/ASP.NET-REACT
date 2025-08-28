@@ -62,8 +62,7 @@ builder.Services.AddApiVersioning(options =>
 });
 
 // ---------- Controllers + FluentValidation (auto-validation in API layer) ----------
-builder.Services.AddControllers()
-    .AddNewtonsoftJson();
+builder.Services.AddControllers();
 builder.Services.AddFluentValidationAutoValidation();
 
 // ---------- Swagger ----------

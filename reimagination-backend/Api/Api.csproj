@@ -7,12 +7,17 @@
 
   <ItemGroup>
     <!-- Match your .NET 9 stack; these ranges have inclusive lower bounds -->
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="[9.0.0,10.0.0)" />
-    <PackageReference Include="Swashbuckle.AspNetCore"                         Version="[6.5.0,7.0.0)" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning"            Version="[5.0.0,7.0.0)" />
-    <PackageReference Include="Serilog.AspNetCore"                             Version="[8.0.0,9.0.0)" />
-    <PackageReference Include="Serilog.Sinks.Console"                          Version="[5.0.0,6.0.0)" />
-    <PackageReference Include="FluentValidation.AspNetCore"                    Version="[12.0.0,13.0.0)" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="9.0.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="[6.5.0,7.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="[5.0.0,7.0.0)" />
+    <PackageReference Include="Serilog.AspNetCore" Version="[8.0.0,9.0.0)" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="[5.0.0,6.0.0)" />
   </ItemGroup>
 
   <ItemGroup>
