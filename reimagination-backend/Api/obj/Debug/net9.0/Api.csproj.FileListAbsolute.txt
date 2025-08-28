@@ -4,3 +4,6 @@ C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\reimagination-backend\Api\obj\D
 C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\reimagination-backend\Api\obj\Debug\net9.0\Api.AssemblyInfo.cs
 C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\reimagination-backend\Api\obj\Debug\net9.0\Api.csproj.CoreCompileInputs.cache
 C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\reimagination-backend\Api\obj\Debug\net9.0\Api.sourcelink.json
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\reimagination-backend\Api\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\reimagination-backend\Api\obj\Debug\net9.0\Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\reimagination-backend\Api\obj\Debug\net9.0\Api.MvcApplicationPartsAssemblyInfo.cache
