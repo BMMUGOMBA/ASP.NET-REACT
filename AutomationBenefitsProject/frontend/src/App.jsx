@@ -5,7 +5,8 @@ import Login from "./routes/Login";
 import Dashboard from "./routes/Dashboard";
 import ProjectEditor from "./routes/ProjectEditor";
 import ProjectViewer from "./routes/ProjectViewer";
-import AdminDashboard, { AdminProjectView } from "./routes/AdminDashboard";
+import AdminDashboard from "./routes/AdminDashboard";
+import AdminProjectView from "./routes/AdminProjectView";
 import { Auth } from "./lib/auth";
 
 export default function App() {
