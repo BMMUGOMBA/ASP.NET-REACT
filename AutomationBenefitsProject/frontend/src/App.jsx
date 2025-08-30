@@ -1,33 +1,49 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
-import Header from './components/Header'
-import Login from './routes/Login'
-import Dashboard from './routes/Dashboard'
-import ProjectEditor from './routes/ProjectEditor'
-import ProjectViewer from './routes/ProjectViewer'
-import AdminDashboard, { AdminProjectView } from './routes/AdminDashboard'
-import { Auth } from './lib/auth'
+// src/App.jsx
+import { Routes, Route, Navigate } from "react-router-dom";
+import Header from "./components/Header";
+import Login from "./routes/Login";
+import Dashboard from "./routes/Dashboard";
+import ProjectEditor from "./routes/ProjectEditor";
+import ProjectViewer from "./routes/ProjectViewer";
+import AdminDashboard, { AdminProjectView } from "./routes/AdminDashboard";
+import { Auth } from "./lib/auth";
 
-export default function App(){
-  const me = Auth.me()
+export default function App() {
   return (
     <>
-      <Header/>
+      <Header />
       <Routes>
-        <Route path="/" element={me ? <Dashboard/> : <Navigate to="/login" />} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/new" element={<Guard role="User"><ProjectEditor/></Guard>} />
-        <Route path="/view/:id" element={<Guard><ProjectViewer/></Guard>} />
-        <Route path="/admin" element={<Guard role="Admin"><AdminDashboard/></Guard>} />
-        <Route path="/admin/view/:id" element={<Guard role="Admin"><AdminProjectView/></Guard>} />
-        <Route path="*" element={<Navigate to="/" />} />
+        {/* public */}
+        <Route path="/login" element={<RequireAnon><Login /></RequireAnon>} />
+
+        {/* authenticated */}
+        <Route path="/" element={<RequireAuth><Dashboard /></RequireAuth>} />
+        <Route path="/view/:id" element={<RequireAuth><ProjectViewer /></RequireAuth>} />
+        <Route path="/new" element={<RequireRole role="User"><ProjectEditor /></RequireRole>} />
+
+        {/* admin */}
+        <Route path="/admin" element={<RequireRole role="Admin"><AdminDashboard /></RequireRole>} />
+        <Route path="/admin/view/:id" element={<RequireRole role="Admin"><AdminProjectView /></RequireRole>} />
+
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
-  )
+  );
 }
 
-function Guard({children, role}){
-  const me = Auth.me()
-  if(!me) return <Navigate to="/login"/>
-  if(role && me.role!==role) return <Navigate to="/" />
-  return children
+function RequireAuth({ children }) {
+  const me = Auth.me();
+  if (!me) return <Navigate to="/login" replace />;
+  return children;
+}
+function RequireAnon({ children }) {
+  const me = Auth.me();
+  if (me) return <Navigate to="/" replace />;
+  return children;
+}
+function RequireRole({ children, role }) {
+  const me = Auth.me();
+  if (!me) return <Navigate to="/login" replace />;
+  if (role && me.role !== role) return <Navigate to="/" replace />;
+  return children;
 }
