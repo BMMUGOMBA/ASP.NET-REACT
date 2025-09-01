@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using System.Text.Json;
 using Domain.Entities;
+using Infrastructure.Identity; // ⬅️ required for AppUser
+using Microsoft.AspNetCore.Identity; // for IdentityRole<Guid>
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using System.Text.Json;
 
 namespace Infrastructure.Data;
 

@@ -1,7 +1,8 @@
+// Infrastructure/Identity/AppUser.cs
 using System;
 using Microsoft.AspNetCore.Identity;
 
-namespace Domain.Entities;
+namespace Infrastructure.Identity;
 
 public class AppUser : IdentityUser<Guid>
 {
