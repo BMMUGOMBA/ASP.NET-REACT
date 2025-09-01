@@ -1,0 +1,9 @@
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\AutomationBenefitsProject\backend\Api\obj\Debug\net9.0\Api.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\AutomationBenefitsProject\backend\Api\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\AutomationBenefitsProject\backend\Api\obj\Debug\net9.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\AutomationBenefitsProject\backend\Api\obj\Debug\net9.0\Api.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\AutomationBenefitsProject\backend\Api\obj\Debug\net9.0\Api.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\AutomationBenefitsProject\backend\Api\obj\Debug\net9.0\Api.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\AutomationBenefitsProject\backend\Api\obj\Debug\net9.0\Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\AutomationBenefitsProject\backend\Api\obj\Debug\net9.0\Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\OneDrive\Desktop\DEV\ASP.NET-REACT\AutomationBenefitsProject\backend\Api\obj\Debug\net9.0\Api.sourcelink.json

@@ -1,15 +1,16 @@
 using System.Collections.Generic;
 using System.Text.Json;
 using Domain.Entities;
-using Infrastructure.Identity; // ⬅️ required for AppUser
-using Microsoft.AspNetCore.Identity; // for IdentityRole<Guid>
+using Infrastructure.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Infrastructure.Data;
 
-public class AppDbContext : IdentityDbContext<AppUser, Microsoft.AspNetCore.Identity.IdentityRole<Guid>, Guid>
+public class AppDbContext
+  : IdentityDbContext<AppUser, IdentityRole<Guid>, Guid>
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
 
@@ -20,9 +21,12 @@ public class AppDbContext : IdentityDbContext<AppUser, Microsoft.AspNetCore.Iden
     {
         base.OnModelCreating(b);
 
+        // ✅ NO optional args inside expression trees
         var listConverter = new ValueConverter<List<string>, string>(
-            v => JsonSerializer.Serialize(v, (JsonSerializerOptions?)null),
-            v => string.IsNullOrWhiteSpace(v) ? new List<string>() : JsonSerializer.Deserialize<List<string>>(v)!);
+            v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null),
+            v => string.IsNullOrWhiteSpace(v)
+                    ? new List<string>()
+                    : JsonSerializer.Deserialize<List<string>>(v, (JsonSerializerOptions)null) ?? new List<string>());
 
         b.Entity<Project>(e =>
         {

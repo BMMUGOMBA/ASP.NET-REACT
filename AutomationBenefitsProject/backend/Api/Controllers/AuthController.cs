@@ -1,8 +1,8 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Domain.Entities;
-using Microsoft.AspNetCore.Identity;
+using Infrastructure.Identity;                 // ⬅️ add this
+using Microsoft.AspNetCore.Identity;          // ⬅️ keep this
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
@@ -10,12 +10,13 @@ using Microsoft.IdentityModel.Tokens;
 [Route("api/auth")]
 public class AuthController : ControllerBase
 {
-    private readonly UserManager<AppUser> _userMgr;
+    private readonly UserManager<AppUser> _userMgr;  // ⬅️ AppUser from Infrastructure.Identity
     private readonly IConfiguration _cfg;
 
     public AuthController(UserManager<AppUser> userMgr, IConfiguration cfg)
     {
-        _userMgr = userMgr; _cfg = cfg;
+        _userMgr = userMgr;
+        _cfg = cfg;
     }
 
     public record LoginRequest(string Email, string Password);

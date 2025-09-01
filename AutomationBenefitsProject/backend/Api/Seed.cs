@@ -1,7 +1,11 @@
-using Domain.Entities;
+// Api/Seed.cs
+using System;
+using System.Threading.Tasks;
 using Infrastructure.Data;
+using Infrastructure.Identity;                       // ⬅️ AppUser lives here
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 public static class Seed
 {
@@ -13,6 +17,7 @@ public static class Seed
         var userMgr = sp.GetRequiredService<UserManager<AppUser>>();
         var roleMgr = sp.GetRequiredService<RoleManager<IdentityRole<Guid>>>();
 
+        // roles
         foreach (var r in new[] { "Admin", "User" })
             if (!await roleMgr.RoleExistsAsync(r))
                 await roleMgr.CreateAsync(new IdentityRole<Guid>(r));

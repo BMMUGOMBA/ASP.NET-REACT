@@ -4,6 +4,7 @@ using Application.Files;
 using Domain.Entities;
 using Infrastructure.Data;
 using Infrastructure.Files;
+using Infrastructure.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
