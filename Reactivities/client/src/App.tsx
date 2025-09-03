@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import {Typography} from 'react'
 
 
 function App() {
 
   const title = 'Welcome to Reactivities';
-  const [activities, setActivities] = useState([]);
+  const [activities, setActivities] = useState<Activity>([]);
 
   useEffect(() => {
     fetch('https://localhost:5001/api/activities')
@@ -12,21 +13,22 @@ function App() {
     .then(data => setActivities(data))
 
     return () => {
-      
+
     }
   },[])
   
 
   return (
-  <div>
-      <h3 className="app" style={{color:'red'}}>{title}</h3>
+  <>
+      -<h3 className="app" style={{color:'red'}}>{title}</h3>
+      <Typograph variant='h3'>Reactivities</Typograph>
       <ul>
         {activities.map((activity) => (
           //<li key={activity.id}>{activity.title}</li>
           <li key={activity.id}>{activity.title}</li>
         ))}
       </ul>
-  </div>
+  </>
     
    
   )
