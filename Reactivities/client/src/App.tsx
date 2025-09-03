@@ -10,6 +10,10 @@ function App() {
     fetch('https://localhost:5001/api/activities')
     .then(response => response.json())
     .then(data => setActivities(data))
+
+    return () => {
+      
+    }
   },[])
   
 
