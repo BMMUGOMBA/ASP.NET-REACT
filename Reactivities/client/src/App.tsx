@@ -7,7 +7,7 @@ function App() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5001/api/activities')
+    fetch('https://localhost:5001/api/activities')
     .then(response => response.json())
     .then(data => setActivities(data))
   },[])
