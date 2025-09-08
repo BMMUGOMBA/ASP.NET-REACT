@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {Typography} from 'react'
+import {Typography} from '@mui/material'
 
 
 function App() {
@@ -20,8 +20,8 @@ function App() {
 
   return (
   <>
-      -<h3 className="app" style={{color:'red'}}>{title}</h3>
-      <Typograph variant='h3'>Reactivities</Typograph>
+      <h3 className="app" style={{color:'red'}}>{title}</h3>
+      <Typography variant='h3'>Reactivities</Typography>
       <ul>
         {activities.map((activity) => (
           //<li key={activity.id}>{activity.title}</li>
